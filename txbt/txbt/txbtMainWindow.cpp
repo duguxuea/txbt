@@ -7,5 +7,4 @@ txbtMainWindow::txbtMainWindow(QWidget *parent)
 	setMinimumSize(1200, 800);
 	MainWidget * mw = new MainWidget();
 	this->setCentralWidget(mw);
-	
 }

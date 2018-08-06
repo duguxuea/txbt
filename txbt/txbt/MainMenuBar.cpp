@@ -13,16 +13,13 @@ MainMenuBar::MainMenuBar(QWidget *parent)
 	//this->setAutoFillBackground(true);
 	//this->setPalette(pal);
 
-	//QPixmap pixmap(":images/mainwindow/mainmenu_bak.png");//设定图片
-	//QPalette palette;//创建一个调色板对象
-	//palette.setBrush(this->backgroundRole(), QBrush(pixmap));//用调色板的画笔把映射到pixmap上的图片画到frame.backgroundRole()这个背景上
-	////palette.setColor(frame->backgroundRole(),QColor(192,253,123));
-	//this->setPalette(palette);//设置窗口调色板为palette，窗口和画笔相关联
-	//this->setMask(pixmap.mask()); //可以将图片中透明部分显示为透明的
-	//this->setAutoFillBackground(true);//设置窗体自动填充背景
 
-	this->setObjectName("barbak");
-	this->setStyleSheet("QWidget#barbak{ border - image:url(images/mainwindow/mainmenu_bak.png)}");
+	this->setAutoFillBackground(true);//设置窗体自动填充背景
+	QPixmap pixmap("images/mainwindow/mainmenu_bak.png");//设定图片
+	QPalette palette;//创建一个调色板对象
+	palette.setBrush(this->backgroundRole(), QBrush(pixmap));//用调色板的画笔把映射到pixmap上的图片画到frame.backgroundRole()这个背景上
+	this->setPalette(palette);//设置窗口调色板为palette，窗口和画笔相关联
+
 
 	//左侧属性
 	QLabel * mylabel = new QLabel();
