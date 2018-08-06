@@ -4,9 +4,11 @@
 
 MainCentre::MainCentre(QWidget *parent)
 {
+
+	this->setObjectName(QStringLiteral("MainCentre"));
 	QSize(1200, 700);
 	QLabel * mylabel = new QLabel();
-	QString str = "主画面";
+	QString str = QStringLiteral("主画面");
 	mylabel->setText(str);
 	QHBoxLayout * layout = new QHBoxLayout();
 	layout->addWidget(mylabel);

@@ -3,9 +3,12 @@
 #include <QLabel>
 #include <QPushButton>
 #include <qbitmap.h>
+#include <qfile.h>
+#include <qtextstream.h>
 
 MainMenuBar::MainMenuBar(QWidget *parent)
 {
+	this->setObjectName(QStringLiteral("MainMenuBar"));
 	setFixedSize(1200, 28);
 	this->setAutoFillBackground(true);//设置窗体自动填充背景
 	QPixmap pixmap("images/mainwindow/mainmenu_bak.jpg");//设定图片
@@ -21,7 +24,6 @@ MainMenuBar::MainMenuBar(QWidget *parent)
 	qianlogo->setPixmap(QPixmap("images/mainwindow/qianbi.jpg"));
 	QLabel * qianlabel = new QLabel();
 	qianlabel->setText("10000");
-	qianlabel->setStyleSheet("color:#fff2c9;font-size:20px");
 	qianlabel->setMargin(2);
 
 	//声望
@@ -30,7 +32,6 @@ MainMenuBar::MainMenuBar(QWidget *parent)
 	shengwanglogo->setPixmap(QPixmap("images/mainwindow/shengwang.jpg"));
 	QLabel * shengwanglabel = new QLabel();
 	shengwanglabel->setText("10000");
-	shengwanglabel->setStyleSheet("color:#fff2c9;font-size:20px");
 	shengwanglabel->setMargin(2);
 
 	//黄金
@@ -39,7 +40,6 @@ MainMenuBar::MainMenuBar(QWidget *parent)
 	huangjinlogo->setPixmap(QPixmap("images/mainwindow/huangjin.jpg"));
 	QLabel * huangjinlabel = new QLabel();
 	huangjinlabel->setText("10000");
-	huangjinlabel->setStyleSheet("color:#fff2c9;font-size:20px");
 	huangjinlabel->setMargin(2);
 
 	//木头
@@ -48,7 +48,6 @@ MainMenuBar::MainMenuBar(QWidget *parent)
 	mutoulogo->setPixmap(QPixmap("images/mainwindow/mutou.jpg"));
 	QLabel * mutoulabel = new QLabel();
 	mutoulabel->setText("10000");
-	mutoulabel->setStyleSheet("color:#fff2c9;font-size:20px");
 	mutoulabel->setMargin(2);
 
 	//石头
@@ -57,7 +56,6 @@ MainMenuBar::MainMenuBar(QWidget *parent)
 	shitoulogo->setPixmap(QPixmap("images/mainwindow/shitou.jpg"));
 	QLabel * shitoulabel = new QLabel();
 	shitoulabel->setText("10000");
-	shitoulabel->setStyleSheet("color:#fff2c9;font-size:20px");
 	shitoulabel->setMargin(2);
 
 	//铁矿
@@ -66,7 +64,6 @@ MainMenuBar::MainMenuBar(QWidget *parent)
 	tiekuanglogo->setPixmap(QPixmap("images/mainwindow/tiekuang.jpg"));
 	QLabel * tiekuanglabel = new QLabel();
 	tiekuanglabel->setText("10000");
-	tiekuanglabel->setStyleSheet("color:#fff2c9;font-size:20px");
 	tiekuanglabel->setMargin(2);
 
 	//草药
@@ -75,14 +72,13 @@ MainMenuBar::MainMenuBar(QWidget *parent)
 	caoyaologo->setPixmap(QPixmap("images/mainwindow/caoyao.jpg"));
 	QLabel * caoyaolabel = new QLabel();
 	caoyaolabel->setText("10000");
-	caoyaolabel->setStyleSheet("color:#fff2c9;font-size:20px");
 	caoyaolabel->setMargin(2);
 
 	//右侧按钮
 	QPushButton *pButWuXue = new QPushButton();
 	//QPixmap QPWuXue("images/mainwindow/wuxue.jpg");
 	//pButWuXue->setIcon(QPWuXue);
-	pButWuXue ->setStyleSheet(tr("background-image: url(:/icon/res/icon/wall.png);"));
+	pButWuXue ->setStyleSheet(tr("background-image: url(:/images/mainwindow/wuxue.jpg);"));
 	
 
 	QHBoxLayout * layout = new QHBoxLayout();
