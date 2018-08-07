@@ -1,0 +1,15 @@
+/***********************设置MainMenuBar下所有QLabel样式****************************/
+QWidget#MainMenuBar > QLabel{
+    font-family:"Microsoft YaHei";
+	color:#fff2c9;
+	font-size:20px;
+}
+/*菜单栏按钮*/
+QWidget#MainMenuBar > QPushButton{
+	background-color:rgb(255,0,0,80);
+	border:none;
+	min-height:28;
+}
+QWidget#MainMenuBar > QPushButton:hover{
+	background-color:rgb(255,0,0,80);
+}

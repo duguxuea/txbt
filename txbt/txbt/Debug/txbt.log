@@ -1,11 +1,19 @@
-﻿生成启动时间为 2018/8/7 14:01:48。
+﻿生成启动时间为 2018/8/7 19:46:59。
      1>项目“E:\my_code\txbt\txbt\txbt\txbt.vcxproj”在节点 2 上(Build 个目标)。
-     1>ResourceCompile:
-         C:\Program Files (x86)\Windows Kits\8.1\bin\x86\rc.exe /l"0x0409" /nologo /fo"Debug\txbt.res" txbt.rc 
-     1>RC : fatal error RC1110: could not open txbt.rc
-         
-     1>已完成生成项目“E:\my_code\txbt\txbt\txbt\txbt.vcxproj”(Build 个目标)的操作 - 失败。
+     1>ClCompile:
+         C:\Program Files (x86)\Microsoft Visual Studio 12.0\VC\bin\CL.exe /c /I.\GeneratedFiles /I. /ID:\Qt\Qt5.6.2\5.6\msvc2013\include /I.\GeneratedFiles\Debug /ID:\Qt\Qt5.6.2\5.6\msvc2013\include\QtCore /ID:\Qt\Qt5.6.2\5.6\msvc2013\include\QtGui /ID:\Qt\Qt5.6.2\5.6\msvc2013\include\QtWidgets /Zi /nologo /W1 /WX- /Od /Oy- /D UNICODE /D WIN32 /D WIN64 /D QT_CORE_LIB /D QT_GUI_LIB /D QT_WIDGETS_LIB /Gm- /EHsc /MDd /GS /fp:precise /Zc:wchar_t /Zc:forScope /Fo"Debug\\" /Fd"Debug\vc120.pdb" /Gd /TP /analyze- /errorReport:prompt MainMenuBar.cpp
+         MainMenuBar.cpp
+       Link:
+         C:\Program Files (x86)\Microsoft Visual Studio 12.0\VC\bin\link.exe /ERRORREPORT:PROMPT /OUT:"E:\my_code\txbt\txbt\Win32\Debug\\txbt.exe" /NOLOGO /LIBPATH:D:\Qt\Qt5.6.2\5.6\msvc2013\lib qtmaind.lib Qt5Cored.lib Qt5Guid.lib Qt5Widgetsd.lib kernel32.lib user32.lib gdi32.lib winspool.lib comdlg32.lib advapi32.lib shell32.lib ole32.lib oleaut32.lib uuid.lib odbc32.lib odbccp32.lib /MANIFEST /MANIFESTUAC:"level='asInvoker' uiAccess='false'" /manifest:embed /DEBUG /PDB:"E:\my_code\txbt\txbt\Win32\Debug\txbt.pdb" /SUBSYSTEM:WINDOWS /TLBID:1 /DYNAMICBASE /NXCOMPAT /IMPLIB:"E:\my_code\txbt\txbt\Win32\Debug\txbt.lib" /MACHINE:X86 /SAFESEH Debug\qrc_txbt.obj
+         Debug\main.obj
+         Debug\MainCentre.obj
+         Debug\MainFoot.obj
+         Debug\MainMenuBar.obj
+         Debug\MainWidget.obj
+         Debug\txbtMainWindow.obj
+         txbt.vcxproj -> E:\my_code\txbt\txbt\Win32\Debug\txbt.exe
+     1>已完成生成项目“E:\my_code\txbt\txbt\txbt\txbt.vcxproj”(Build 个目标)的操作。
 
-生成失败。
+生成成功。
 
-已用时间 00:00:00.47
+已用时间 00:00:01.73

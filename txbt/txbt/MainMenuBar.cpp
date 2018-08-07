@@ -75,11 +75,12 @@ MainMenuBar::MainMenuBar(QWidget *parent)
 	caoyaolabel->setMargin(2);
 
 	//右侧按钮
-	QPushButton *pButWuXue = new QPushButton();
-	//QPixmap QPWuXue("images/mainwindow/wuxue.jpg");
-	//pButWuXue->setIcon(QPWuXue);
-	pButWuXue ->setStyleSheet(tr("background-image: url(:/images/mainwindow/wuxue.jpg);"));
-	
+	QPushButton *pBtnWuXue = new QPushButton();//武学
+	pBtnWuXue->setStyleSheet("QPushButton { background-image: url(images/mainwindow/wuxue.jpg);min-width:36;}");
+	QPushButton *pBtnQingBao = new QPushButton();//情报
+	pBtnQingBao->setStyleSheet("QPushButton { background-image: url(images/mainwindow/qingbao.jpg);min-width:38;}");
+	QPushButton *pBtnSystem = new QPushButton();//系统
+	pBtnSystem->setStyleSheet("QPushButton { background-image: url(images/mainwindow/system.jpg);}");
 
 	QHBoxLayout * layout = new QHBoxLayout();
 	layout->setMargin(1);
@@ -99,8 +100,10 @@ MainMenuBar::MainMenuBar(QWidget *parent)
 	layout->addWidget(caoyaolabel);
 
 
-	layout->addStretch();
-	layout->addWidget(pButWuXue);
+	layout->addStretch();//中间支撑滑块
+	layout->addWidget(pBtnWuXue);//武学
+	layout->addWidget(pBtnQingBao);//情报
+	layout->addWidget(pBtnSystem);//系统
 
 	this->setLayout(layout);
 }

@@ -87,7 +87,4 @@
       <Filter>Header Files</Filter>
     </ClInclude>
   </ItemGroup>
-  <ItemGroup>
-    <ResourceCompile Include="txbt.rc" />
-  </ItemGroup>
 </Project>
