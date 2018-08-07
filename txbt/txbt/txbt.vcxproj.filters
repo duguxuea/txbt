@@ -61,12 +61,18 @@
     <ClCompile Include="MainFoot.cpp">
       <Filter>Source Files</Filter>
     </ClCompile>
+    <ClCompile Include="QingBaoWidget.cpp">
+      <Filter>Source Files</Filter>
+    </ClCompile>
   </ItemGroup>
   <ItemGroup>
     <CustomBuild Include="txbt.qrc">
       <Filter>Resource Files</Filter>
     </CustomBuild>
     <CustomBuild Include="txbtMainWindow.h">
+      <Filter>Header Files</Filter>
+    </CustomBuild>
+    <CustomBuild Include="QingBaoWidget.h">
       <Filter>Header Files</Filter>
     </CustomBuild>
   </ItemGroup>

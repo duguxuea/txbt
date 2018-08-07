@@ -1,4 +1,9 @@
 /***********************设置MainMenuBar下所有QLabel样式****************************/
+#MainMenuBar{
+	min-width:1200;
+	max-height:28;
+	background-image: url(images/mainwindow/mainmenu_bak.jpg);
+}
 QWidget#MainMenuBar > QLabel{
     font-family:"Microsoft YaHei";
 	color:#fff2c9;
@@ -6,10 +11,53 @@ QWidget#MainMenuBar > QLabel{
 }
 /*菜单栏按钮*/
 QWidget#MainMenuBar > QPushButton{
-	background-color:rgb(255,0,0,80);
 	border:none;
 	min-height:28;
 }
 QWidget#MainMenuBar > QPushButton:hover{
 	background-color:rgb(255,0,0,80);
+}
+QPushButton#pBtnWuXue{
+	background-image: url(images/mainwindow/wuxue.jpg);
+	min-width:36;
+}
+QPushButton#pBtnQingBao{
+	background-image: url(images/mainwindow/qingbao.jpg);
+	min-width:38;
+}
+QPushButton#pBtnSystem{
+	background-image: url(images/mainwindow/system.jpg);
+	min-width:29;
+}
+/*菜单栏属性*/
+#MainMenuBar > QLable{
+	margin:0;
+}
+#qianlogo{
+	min-width:24;
+	background-image: url(images/mainwindow/qianbi.jpg);
+}
+#shengwanglogo{
+	min-width:24;
+	background-image: url(images/mainwindow/shengwang.jpg);
+}
+#huangjinlogo{
+	min-width:25;
+	background-image: url(images/mainwindow/huangjin.jpg);
+}
+#mutoulogo{
+	min-width:28;
+	background-image: url(images/mainwindow/mutou.jpg);
+}
+#shitoulogo{
+	min-width:28;
+	background-image: url(images/mainwindow/shitou.jpg);
+}
+#tiekuanglogo{
+	min-width:29;
+	background-image: url(images/mainwindow/tiekuang.jpg);
+}
+#caoyaologo{
+	min-width:27;
+	background-image: url(images/mainwindow/caoyao.jpg);
 }
